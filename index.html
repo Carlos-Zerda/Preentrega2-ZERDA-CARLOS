@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/estilo.css">
     <link rel="shortcut icon" href="./assets/iconos/autonomo.png" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Rajdhani&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/estilo.css">
     <title>Pointrack</title>
 </head>
 <body>
@@ -16,8 +17,10 @@
         <nav>
             <a href="./index.html">Inicio</a>
             <a href="./views/Contactenos.html">Contactenos</a>
+            <a href="./views/imagenes.html">Imagenes</a>
         </nav>
-        <sectio class="textos-header">
+        <sectio class="textos-header" data-aos="fade-up"
+        data-aos-duration="3000">
             <h1>OPTIMIZA TUS RECURSOS LOGISTICOS</h1>
             <h2>CON GEOLOCALIZACION INTELIGENTE</h2>
         </sectio>
@@ -26,9 +29,11 @@
     <main>
         <section class="contenedor sobre nosotro">
             <h2 class="titulo">SOBRE NOSOTROS</h2>
-            <div class="contenedor-sobre-nosotros">
+            <div class="contenedor-sobre-nosotros" data-aos="flip-left"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="2000">
                 <img src="./assets/img/conecion camion sin fondo.png" alt="" class="imagen-sobre-nosotros">
-                <div class="contenido-textos">
+                <div class="contenido-textos" >
                     <h3><span>1</span>Optimizacion de recursos</h3>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus sint pariatur autem, rem sed dolorum fugiat quibusdam quia fuga a sunt voluptatibus, reiciendis corporis voluptas facere accusantium? Labore sequi debitis facilis consequatur laborum? Pariatur veritatis nihil libero magnam unde molestiae itaque, ipsum quos, voluptatem, officia repellat velit incidunt. Rerum, quasi eaque neque rem quo dolorum, voluptatibus quidem adipisci est minus nulla, voluptate eius? Pariatur ad vel fugit ducimus totam quasi.</p>
                     <h3><span>2</span>Conecciones</h3>
@@ -36,7 +41,7 @@
                 </div>
             </div>
         </section>
-        <section class="nuestros-clientes">
+        <section class="nuestros-clientes" data-aos="zoom-out">
             <div class="contenedor">
                 <h2 class="titulo">NUESTROS CLIENTES</h2>
                 <div class="galeria-clientes">
@@ -64,7 +69,9 @@
                 </div>
             </div>
         </section>
-        <section class="nuestros-servicios">
+        <section class="nuestros-servicios" data-aos="fade-right"
+        data-aos-offset="300"
+        data-aos-easing="ease-in-sine">
             <div class="contenedor">
                 <h2 class="titulo">NUESTROS SERVICIOS</h2>
                 <div class="nuestros-servicios-cont">
@@ -109,6 +116,9 @@
             </div>
         </div>
     </footer>
-    
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+  </script>  
 </body>
 </html>
