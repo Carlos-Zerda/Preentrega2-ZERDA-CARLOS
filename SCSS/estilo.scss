@@ -1,0 +1,56 @@
+/*variables*/
+
+$violeta:#7701A8;
+$naranja:#fc4b1a6b;
+$marron:#f7b6339c;
+$negro:#000000bb;
+$negrosolido:#000000;
+$verde:#00ff0d;
+$lila:#cc00ff;
+$naranjaclaro:#f7b733;
+$blanco:#ffffff;
+$gris:#5e5e5d;
+$gradiente1:-webkit-linear-gradient(to right, $marron, $naranja);
+$gradiente2:linear-gradient(to right, #f7b6339c, #fc4b1a96);
+$tipografia : 'Rajdhani' , sans-serif;
+$smartphone:(max-width:480px);
+
+
+
+/*reset parametros*/
+
+*{margin: 0;
+    padding: 0;
+    box-sizing: border-box;}
+    
+    
+
+/*estilo general*/
+    
+body{
+    font-family:$tipografia;
+    .contenedor{
+        padding: 60px 0;
+        width:  90%;
+        max-width: 1000px;
+        margin: auto;
+        overflow: hidden
+    }
+    .titulo{
+        color: $violeta;
+        font-size: 30px;
+        text-align: center;
+        margin-bottom: 60px;
+    }
+}
+    
+
+@import "header";
+@import "sobre-nosotros";  
+@import "nuestros-clientes";
+@import "nuestros-servicios";
+@import "footer";
+@import "imagenes";
+@import "contactenos";
+@import "centros_operacionale";
+@import "responsive";

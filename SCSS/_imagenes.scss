@@ -1,0 +1,61 @@
+/*imagenes*/
+
+.header_grid {  
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 2fr 2fr 2fr 2fr 2fr;
+  grid-auto-columns: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "ej1 ej2"
+    "ej3 ej4"
+    "ej5 ej6"
+    "ej7 ej8"
+    "ej9 ej10";
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  align-content: center;
+  padding: 50px;
+  .ej1 { grid-area: ej1; }
+  
+  .ej2 { grid-area: ej2; }
+    
+  .ej3 { grid-area: ej3; }
+    
+  .ej4 { grid-area: ej4; }
+    
+  .ej5 { grid-area: ej5; }
+    
+  .ej6 { grid-area: ej6; }
+    
+  .ej7 { grid-area: ej7; }
+    
+  .ej8 { grid-area: ej8; }
+    
+  .ej9 { grid-area: ej9; }
+    
+  .ej10 { grid-area: ej10; }
+  img{
+    border-radius: 15px;
+    width: 100%;
+    }
+}
+  
+.video{
+  display:block ;
+  padding: 50px;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+  width: 100%;
+  iframe{
+    display:block ;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+  }
+}
+

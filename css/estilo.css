@@ -1,452 +1,548 @@
-*{margin: 0;
-    padding: 0;
-    box-sizing: border-box;}
-    
-    
-    /*----------------------------------------------------*/
-    
-    /*index*/
-    
-    
-    /*estilo general*/
-    
-    body{font-family: 'Rajdhani', sans-serif;}
-    
-        .contenedor{padding: 60px 0;
-        width:  90%;
-        max-width: 1000px;
-        margin: auto;
-        overflow: hidden;}
-    
-        .titulo{color: #7701A8;
-        font-size: 30px;
-        text-align: center;
-        margin-bottom: 60px;}
-    
-    
-    
-    /*header*/
-    header{width: 100%;
-        height: 500px;
-        background: #fc4b1a6b;  /* fallback for old browsers */
-        background: -webkit-linear-gradient(to right, #f7b6339c, #fc4b1a96),url(../assets/img/fondo\ camiones.jpg);  /* Chrome 10-25, Safari 5.1-6 */
-        background: linear-gradient(to right, #f7b6339c, #fc4b1a96),url(../assets/img/fondo\ camiones.jpg); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-        
-        background-size:cover;
-        background-repeat: no-repeat;
-        background-position: center;
-        background-attachment: fixed;
-        position:relative;
-        
-    }
-    
-    nav{
-        text-align: right;
-        padding: 30px 10px 0 0;
-        background-color: rgba(0, 0, 0, 0.733);
-        height: 70px;
-        position:fixed;
-        left: 0;
-        top: 0;
-        width: 100%;
-        z-index: 1000;
-        
-    }
-    
-    nav>a{color: rgb(0, 255, 13);
-        font-weight: 300px;
-        text-decoration: none;
-        margin-right: 10px;}
-    
-    nav>a:hover{border-bottom-style: solid;
-    border-bottom-color: rgb(0, 255, 13);}
-    
-    header .textos-header{
-        display: flex;
-        height: 400px;
-        width: 100%;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        text-align: center;
-        margin-top: 0px;
-        padding-top: 50px;
-        }
-    
-    .textos-header h1{
-        font-size: 50px;
-        color: rgb(41, 0, 59);}
-    
-    .textos-header h2{
-        font-size: 30px;
-        font-weight: 300;
-        color: rgb(41, 0, 59);}
-    
-    
-    .wave{
-        position:relative;
-        width: 100%;
-        height: 20%;
-        bottom:0;}
-    
-    
-    
-    /*sobre nosotros*/
-    .contenedor-sobre-nosotros{display: flex;
-        justify-content: space-evenly;}
-    
-    .imagen-sobre-nosotros{width: auto;height:fit-content;margin-top: 70px;}
-       
-    .contenido-textos h3{margin-bottom: 15px;margin-top: 10px;}
-    
-    .contenido-textos h3 span{background-color:     #f7b733;
-        color: rgb(204, 0, 255);
-        border-radius: 50%;
-        display: inline-block;
-        text-align: center;
-        width: 30px;
-        height: 30px;
-        padding: 2px;
-        box-shadow: 0 0 6px 0 rgb(0, 0, 0);
-        margin-right: 5px;}
-    
-    .contenido-textos{padding: 0px 0px 30px 15px;
-    font-weight: 300;
-    text-align:justify;}
-    
-    
-    /*nuestros clientes*/
-    .nuestros-clientes{background-color: f2f2f2;}
-    
-    .galeria-clientes{display: flex;
-        justify-content: space-evenly;
-        flex-wrap: wrap;}
-    
-    .imagen-clientes{width: 24%;
-    margin-bottom: 10px;
-    object-fit: cover;
-    overflow: hidden;
-    position: relative;
-    cursor: pointer;
-    box-shadow: 0 0 6px rgba(0, 0, 0, 5);
-    height: 200px;}
-    
-    .imagen-clientes > img{width: 100%;
-    height: 100%;
-    object-fit:cover;
-    display: block;
+/*variables*/
+/*reset parametros*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*estilo general*/
+body {
+  font-family: "Rajdhani", sans-serif;
+}
+body .contenedor {
+  padding: 60px 0;
+  width: 90%;
+  max-width: 1000px;
+  margin: auto;
+  overflow: hidden;
+}
+body .titulo {
+  color: #7701A8;
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+/*header*/
+header {
+  width: 100%;
+  height: 1000px;
+  background: rgba(252, 75, 26, 0.4196078431);
+  background: -webkit-linear-gradient(to right, rgba(247, 182, 51, 0.6117647059), rgba(252, 75, 26, 0.4196078431));
+  background: linear-gradient(to right, rgba(247, 182, 51, 0.6117647059), rgba(252, 75, 26, 0.5882352941)), url(../assets/img/fondo\ camion.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  position: relative;
+}
+header nav {
+  text-align: right;
+  padding: 30px 10px 0 0;
+  background-color: rgba(0, 0, 0, 0.7333333333);
+  height: 70px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+header nav a {
+  color: #00ff0d;
+  font-weight: 300px;
+  text-decoration: none;
+  margin-right: 10px;
+}
+header nav a:hover {
+  border-bottom-style: solid;
+  border-bottom-color: #00ff0d;
+}
+header .textos-header {
+  display: flex;
+  height: 400px;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 0px;
+  padding-top: 50px;
+  font-style: oblique;
+}
+header .textos-header h1 {
+  font-size: 50px;
+  color: #7701A8;
+}
+header .textos-header h2 {
+  font-size: 30px;
+  font-weight: 300;
+  color: #7701A8;
+}
+header .wave {
+  position: absolute;
+  width: 100%;
+  height: 20%;
+  bottom: -10px;
+}
+
+/*sobre nosotros*/
+.contenedor-sobre-nosotros {
+  display: flex;
+  justify-content: space-evenly;
+}
+.contenedor-sobre-nosotros .imagen-sobre-nosotros {
+  width: auto;
+  height: fit-content;
+  margin-top: 70px;
+}
+.contenedor-sobre-nosotros .contenido-textos {
+  padding: 0px 0px 30px 15px;
+  font-weight: 300;
+  text-align: justify;
+}
+.contenedor-sobre-nosotros .contenido-textos h3 {
+  margin-bottom: 15px;
+  margin-top: 10px;
+}
+.contenedor-sobre-nosotros .contenido-textos h3 span {
+  background-color: #f7b733;
+  color: #cc00ff;
+  border-radius: 50%;
+  display: inline-block;
+  text-align: center;
+  width: 30px;
+  height: 30px;
+  padding: 2px;
+  box-shadow: 0 0 6px 0 #000000;
+  margin-right: 5px;
+}
+
+/*nuestros clientes*/
+.nuestros-clientes {
+  background-color: #ffffff;
+}
+.nuestros-clientes .galeria-clientes {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.nuestros-clientes .galeria-clientes .imagen-clientes {
+  width: 24%;
+  margin-bottom: 10px;
+  object-fit: cover;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+  box-shadow: 0 0 6px rgb(0, 0, 0);
+  height: 200px;
+}
+.nuestros-clientes .galeria-clientes .imagen-clientes > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.nuestros-clientes .galeria-clientes .imagen-clientes .hover-galeria {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  transform: scale(0);
+  background: #f7b733;
+  transition: transform 0.5s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.nuestros-clientes .galeria-clientes .imagen-clientes .hover-galeria p {
+  color: #7701A8;
+  margin-bottom: 10PX;
+  text-decoration: double;
+}
+.nuestros-clientes .galeria-clientes .imagen-clientes .hover-galeria img {
+  width: 80%;
+}
+.nuestros-clientes .galeria-clientes .imagen-clientes:hover .hover-galeria {
+  transform: scale(1);
+}
+
+/*nuestros ervicios*/
+.nuestros-servicios {
+  padding-bottom: 30px;
+}
+.nuestros-servicios .nuestros-servicios-cont {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nuestros-servicios .nuestros-servicios-cont .nuestros-servicios-ind {
+  width: 100%;
+  text-align: center;
+  padding: 8px;
+}
+.nuestros-servicios .nuestros-servicios-cont .nuestros-servicios-ind img {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+}
+.nuestros-servicios .nuestros-servicios-cont .nuestros-servicios-ind h3 {
+  margin: 10px 0;
+}
+.nuestros-servicios .nuestros-servicios-cont .nuestros-servicios-ind p {
+  font-weight: 300;
+  text-align: justify;
+}
+
+/*footer*/
+footer {
+  background: #7701A8;
+  padding: 30PX 0 15PX 0;
+  margin: auto;
+  overflow: hidden;
+  text-align: center;
+}
+footer .contenedor-footer {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  margin: auto;
+  padding-bottom: 50px;
+  border-bottom: 1px solid #ffffff;
+}
+footer .contenedor-footer .content-foo img {
+  width: 70px;
+}
+
+/*imagenes*/
+.header_grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 2fr 2fr 2fr 2fr 2fr;
+  grid-auto-columns: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: "ej1 ej2" "ej3 ej4" "ej5 ej6" "ej7 ej8" "ej9 ej10";
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  align-content: center;
+  padding: 50px;
+}
+.header_grid .ej1 {
+  grid-area: ej1;
+}
+.header_grid .ej2 {
+  grid-area: ej2;
+}
+.header_grid .ej3 {
+  grid-area: ej3;
+}
+.header_grid .ej4 {
+  grid-area: ej4;
+}
+.header_grid .ej5 {
+  grid-area: ej5;
+}
+.header_grid .ej6 {
+  grid-area: ej6;
+}
+.header_grid .ej7 {
+  grid-area: ej7;
+}
+.header_grid .ej8 {
+  grid-area: ej8;
+}
+.header_grid .ej9 {
+  grid-area: ej9;
+}
+.header_grid .ej10 {
+  grid-area: ej10;
+}
+.header_grid img {
+  border-radius: 15px;
+  width: 100%;
+}
+
+.video {
+  display: block;
+  padding: 50px;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+  width: 100%;
+}
+.video iframe {
+  display: block;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+/*contactenos*/
+.section1 {
+  border-radius: 15px;
+  width: 100%;
+  height: 200x;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Rajdhani", sans-serif;
+  font-style: inherit;
+}
+.section1 form {
+  background-color: white;
+  width: 400px;
+  padding: 10px 10px;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  border-style: double;
+  border-color: #f7b733;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-bottom: 10%;
+  margin-top: 10%;
+}
+.section1 form h2 {
+  color: #7701A8;
+}
+.section1 form .form {
+  width: 100%;
+  margin: auto;
+}
+.section1 form .form .grupo {
+  position: relative;
+  margin: 45px;
+}
+.section1 form .form .grupo input {
+  background: none;
+  color: rgba(0, 0, 0, 0.7333333333);
+  font-size: 20px;
+  padding: 10px 10px 10px 5px;
+  display: block;
+  width: 100%;
+  border: none;
+  border-bottom: 10px solid var(--colorTextos);
+  resize: none;
+}
+.section1 form .form .grupo input .barra {
+  position: relative;
+  display: flex;
+  width: 100%;
+}
+.section1 form .form .grupo input .barra::before {
+  content: "";
+  height: 2px;
+  width: 0%;
+  bottom: 0;
+  position: absolute;
+  background: linear-gradient(to right, rgba(247, 182, 51, 0.6117647059), rgba(252, 75, 26, 0.5882352941));
+  transition: 0.3s ease all;
+  left: 0%;
+}
+.section1 form .form .grupo input:focus {
+  outline: none;
+  color: #5e5e5d;
+}
+.section1 form .form .grupo input:focus ~ label {
+  position: absolute;
+  top: -14px;
+  font-size: 20px;
+  color: #7701A8;
+}
+.section1 form .form .grupo input:valid ~ label {
+  position: absolute;
+  top: -14px;
+  font-size: 20px;
+  color: #7701A8;
+}
+.section1 form .form .grupo input:focus ~ .barra::before {
+  width: 100%;
+}
+.section1 form .form .grupo label {
+  font-size: 16px;
+  position: absolute;
+  left: 0;
+  top: 10px;
+  transition: 0.4s ease all;
+  pointer-events: none;
+}
+.section1 form .form .grupo textarea {
+  background: none;
+  color: rgba(0, 0, 0, 0.7333333333);
+  font-size: 20px;
+  padding: 10px 10px 10px 5px;
+  display: block;
+  width: 100%;
+  border: none;
+  border-bottom: 10px solid var(--colorTextos);
+  resize: none;
+}
+.section1 form .form .grupo textarea .barra {
+  position: relative;
+  display: flex;
+  width: 100%;
+}
+.section1 form .form .grupo textarea .barra::before {
+  content: "";
+  height: 2px;
+  width: 0%;
+  bottom: 0;
+  position: absolute;
+  background: linear-gradient(to right, rgba(247, 182, 51, 0.6117647059), rgba(252, 75, 26, 0.5882352941));
+  transition: 0.3s ease all;
+  left: 0%;
+}
+.section1 form .form .grupo textarea:focus {
+  outline: none;
+  color: #5e5e5d;
+}
+.section1 form .form .grupo textarea:focus ~ label {
+  position: absolute;
+  top: -14px;
+  font-size: 20px;
+  color: #7701A8;
+}
+.section1 form .form .grupo textarea:valid ~ label {
+  position: absolute;
+  top: -14px;
+  font-size: 20px;
+  color: #7701A8;
+}
+.section1 form .form .grupo textarea:focus ~ .barra::before {
+  width: 100%;
+}
+.section1 form button {
+  background: rgba(252, 75, 26, 0.4196078431);
+  background: -webkit-linear-gradient(to right, rgba(247, 182, 51, 0.6117647059), rgba(252, 75, 26, 0.4196078431));
+  background: linear-gradient(to right, rgba(247, 182, 51, 0.6117647059), rgba(252, 75, 26, 0.5882352941));
+  display: block;
+  width: 100px;
+  height: 40px;
+  border: none;
+  color: #ffffff;
+  border-radius: 4px;
+  font-size: 16px;
+  margin: 10px auto;
+}
+
+/*centros operacionales*/
+main h2 {
+  margin-top: 200px;
+}
+
+/*responsive*/
+@media screen and (max-width: 950px) {
+  /*sobre nosotros*/
+  .contenedor-sobre-nosotros {
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+  .contenedor-sobre-nosotros .imagen-sobre-nosotros {
+    width: 80%;
+  }
+  .contenedor-sobre-nosotros .contenido-textos {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 768px) {
+  /*header*/
+  header {
+    background-position: center;
+    width: 100%;
+  }
+  /*nuestros clientes*/
+  .galeria-clientes {
+    width: auto;
+  }
+  .galeria-clientes .imagen-clientes {
+    width: auto;
+  }
+  /*nuestros servicios*/
+  .nuestros-servicios-cont {
+    flex-direction: row;
+    justify-content: center;
+  }
+  .nuestros-servicios-cont .nuestros-servicios-ind {
+    width: 100%;
+    text-align: center;
+    height: 200px;
+  }
+  .nuestros-servicios-cont .nuestros-servicios-ind:nth-child(1) {
+    margin-bottom: 80px;
+  }
+  .nuestros-servicios-cont .nuestros-servicios-ind:nth-child(2) {
+    margin-bottom: 80px;
+  }
+  .nuestros-servicios-cont .nuestros-servicios-ind:nth-child(3) {
+    margin-bottom: 80px;
+  }
+  .nuestros-servicios-cont .nuestros-servicios-ind img {
+    width: 80%;
+  }
+  /*footer*/
+  .content-foo {
+    width: 90%;
+    height: 90%;
+    display: flexbox;
+  }
+  /*Imagenes*/
+  .header_grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: 3fr 3fr 3fr 3fr 3fr 3fr 3fr 3fr 3fr 3fr;
+    grid-auto-columns: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas: "ej1" "ej2" "ej4" "ej3" "ej5" "ej6" "ej8" "ej7" "ej9" "ej10";
+  }
+  .header_grid img {
+    width: 100%;
+    height: 100%;
+  }
+}
+@media screen and (max-width: 480px) {
+  /*sobre nosotros*/
+  body .titulo {
+    font-size: 50px;
+  }
+  /*nuestros clientes*/
+  .nuestros-clientes {
+    flex-direction: row;
+    justify-content: center;
+  }
+  .nuestros-clientes .galeria-clientes {
+    width: 100%;
+  }
+  .nuestros-clientes .galeria-clientes .imagen-clientes {
+    width: 40%;
+  }
+  /*nuestros servicios*/
+  .nuestros-servicios-cont {
     flex-direction: column;
-    }
-    
-    .hover-galeria{position: absolute;
-        width: 100%;
-        height: 100%;
-        top: 0;
-        transform: scale(0);
-        background:#f7b733;
-        transition: transform .5s ;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;}
-    
-    .hover-galeria img{width: 80%;}
-    
-    .hover-galeria p{color: rgb(158, 56, 206);
-        margin-bottom: 10PX;
-        text-decoration:double;}
-    
-    .imagen-clientes:hover .hover-galeria{transform:    scale(1);}
-    
-    
-    
-    
-    /*NUESTROS SERVICIOS*/
-    
-    .nuestros-servicios{
-        padding-bottom: 30px;
-    }
-    
-    .nuestros-servicios-cont{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-    
-    .nuestros-servicios-ind{
-        width: 28%;
-        text-align: center;
-    
-    }
-    
-    .nuestros-servicios-ind img{
-        width: 100%;
-        border-radius: 20px;
-    }
-    
-    .nuestros-servicios-ind h3{
-        margin: 10px 0;
-    }
-    
-    .nuestros-servicios-ind p{
-        font-weight: 300;
-        text-align: justify;
-    }
-    
-    
-    
-    /*FOOTER*/
-    
-    footer{background: #8d21e68e;
-    padding: 30PX 0 15PX 0;
-    margin: auto;
-    overflow: hidden;
-    text-align: center;}
-    
-    .contenedor-footer{
-        display: flex;
-        width: 100%;
-        justify-content: space-evenly;
-        margin: auto;
-        padding-bottom: 50px;
-        border-bottom: 1px solid #ccc;
-    }
-    
-    .content-foo img{width: 70px;}
-    
-    
-    
-     /*----------------------------------------------------*/
-    
-    
-    /*Imagenes*/ 
-    .header_grid {  display: grid;
-      grid-template-columns: 1fr 1fr;
-      grid-template-rows: 2fr 2fr 2fr 2fr 2fr;
-      grid-auto-columns: 1fr;
-      gap: 0px 0px;
-      grid-auto-flow: row;
-      grid-template-areas:
-        "ej1 ej2"
-        "ej3 ej4"
-        "ej5 ej6"
-        "ej7 ej8"
-        "ej9 ej10";
-        justify-content: center;
-        justify-items: center;
-        align-items: center;
-        align-content: center;
-        padding: 50px; 
-    }
-    
-    .header_grid img{border-radius: 15px;
-    }
-    
-    .ej1 { grid-area: ej1; }
-    
-    .ej2 { grid-area: ej2; }
-    
-    .ej3 { grid-area: ej3; }
-    
-    .ej4 { grid-area: ej4; }
-    
-    .ej5 { grid-area: ej5; }
-    
-    .ej6 { grid-area: ej6; }
-    
-    .ej7 { grid-area: ej7; }
-    
-    .ej8 { grid-area: ej8; }
-    
-    .ej9 { grid-area: ej9; }
-    
-    .ej10 { grid-area: ej10; }
-    
-    
-    
-    iframe{margin: auto;
-        padding: 20px;
-        display: block;
-        justify-content: center;
-    }
-    
-    
-    
-    
-    /*----------------------------------------------------*/
-    
-    
-    /*contactenos*/
-    
-    .section1{    
-        border-radius: 15px;
-        width: 100%;
-        height: 200x;
-        display:flex;
-        justify-content:center;
-        align-items: center;
-        font-family: 'Rajdhani', sans-serif;
-        font-style:inherit;
-        }
-    
-    form{background-color: white;
-        width: 400px;
-        padding: 10px 10px;
-        border-radius: 15px;
-        display: flex;
-        justify-content: center;
-        border-style: double;
-        border-color: #f7b733;
-        margin-left: 5%;
-        margin-right: 5%;
-        margin-bottom: 10%;
-        margin-top: 10%;
-    }
-    
-    
-    .form{width: 100%;
-        margin: auto;}
-    
-    
-    form .grupo{
-        position: relative;
-        margin: 45px; }
-    
-    
-    input, textarea{
-        background: none;
-        color: #c6c6c6;
-        font-size: 20px;
-        padding: 10px 10px 10px 5px;
-        display: block;
-        width: 100%;
-        border: none;
-        border-bottom: 10px solid var(--colorTextos);
-        resize: none;}
-            
-    input:focus,textarea:focus{
-        outline: none;
-        color: rgb(94,94,93);}
-    
-    
-    input:focus~label,
-    input:valid~label,
-    textarea:focus~label,
-    textarea:valid~label{
-        position: absolute;
-        top: -14px;
-        font-size: 20px;
-        color: rgb(117, 4, 165);}
-            
-    label{    
-        font-size: 16px;
-        position: absolute;
-        left: 0;
-        top: 10px;
-        transition: 0.4s ease all;
-        pointer-events: none;}
-            
-    .barra{
-        position: relative;
-        display: flex;
-        width: 100%;}
-            
-    input:focus~.barra::before, textarea:focus~.barra::before{
-         width: 100%}
-            
-    .barra::before{
-        content: '';
-        height: 2px;
-        width: 0%;
-        bottom: 0;
-        position: absolute;
-        background: linear-gradient(to right, #f7b6339c, #fc4b1a96),url(../assets/img/fondo\ camiones.jpg); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */; 
-        transition: 0.3s ease all;
-        left: 0%;
-            }
-    button{
-        background: #fc4b1a6b;  /* fallback for old browsers */
-        background: -webkit-linear-gradient(to right, #f7b6339c, #fc4b1a96),url(../assets/img/fondo\ camiones.jpg);  /* Chrome 10-25, Safari 5.1-6 */
-        background: linear-gradient(to right, #f7b6339c, #fc4b1a96),url(../assets/img/fondo\ camiones.jpg); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-        display: block;
-        width: 100px;
-        height: 40px;
-        border: none;
-        color: white;
-        border-radius: 4px;
-        font-size: 16px;
-        margin: 10px auto;}
-    
-    
-    
-    
-    /*-------------------------------------------------------------------------------------------------------*/
-    
-    
-        /*responsive*/
-    
-    @media screen and (max-width:900px){
-    
-        /*header*/
-        header{background-position: center;}
-    
-    
-        /*sobre nosotros*/
-        .contenedor-sobre-nosotros{flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        }
-    
-        .sobre nosotros .contenido-textos{width: 90%;}
-    
-        .imagen-sobre-nosotros{width: 90%;}
-    
-    
-        /*nuestros clientes*/
-    
-        .galeria-clientes{width: auto;}
-        .imagen-clientes{width: auto}
-    
-        /*nuestros servicios*/
-    
-        .nuestros-servicios-cont{flex-direction: column ;justify-content: center;}
-    
-        .nuestros-servicios-ind{width: 100%;
-        text-align: center;}
-    
-        .nuestros-servicios-ind:nth-child(1), .nuestros-servicios-ind:nth-child(2){margin-bottom: 80px;}
-    
-        .nuestros-servicios-ind img{width: 90%;}
-    
-    
-        /*footer*/
-    
-        .content-foo{width: 90%;
-        height: 90%;
-        display: flexbox;}
-    
-    
-    
-        /*Imagenes*/
-    
-        .header_grid {  
-            grid-template-columns: 1fr ;
-            grid-template-rows: 2fr 2fr 2fr 2fr 2fr 2fr 2fr 2fr 2fr 2fr;
-            grid-auto-columns: 1fr;
-            gap: 0px 0px;
-            grid-auto-flow: row;
-            grid-template-areas:
-              "ej1" 
-              "ej2"
-              "ej4" 
-              "ej3"
-              "ej5" 
-              "ej6"
-              "ej8" 
-              "ej7"
-              "ej9" 
-              "ej10"
-              ;}
-        }
+    justify-content: center;
+  }
+  .nuestros-servicios-cont .nuestros-servicios-ind {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+  }
+  .nuestros-servicios-cont .nuestros-servicios-ind:nth-child(1) {
+    margin-bottom: 80px;
+  }
+  .nuestros-servicios-cont .nuestros-servicios-ind:nth-child(2) {
+    margin-bottom: 80px;
+  }
+  .nuestros-servicios-cont .nuestros-servicios-ind:nth-child(3) {
+    margin-bottom: 80px;
+  }
+  .nuestros-servicios-cont .nuestros-servicios-ind img {
+    width: 90%;
+  }
+}/*# sourceMappingURL=estilo.css.map */

@@ -1,0 +1,62 @@
+
+/*nuestros clientes*/
+
+.nuestros-clientes{
+    background-color: $blanco;
+    .galeria-clientes{display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        .imagen-clientes{
+            width: 24%;
+            margin-bottom: 10px;
+            object-fit: cover;
+            overflow: hidden;
+            position: relative;
+            cursor: pointer;
+            box-shadow: 0 0 6px rgba(0, 0, 0, 5);
+            height: 200px;       
+            >img{width: 100%;
+                height: 100%;
+                object-fit:cover;
+                display: block;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+            }
+            .hover-galeria{
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                top: 0;
+                transform: scale(0);
+                background:$naranjaclaro;
+                transition: transform .5s ;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                p{
+                    color: $violeta;
+                    margin-bottom: 10PX;
+                    text-decoration:double;;
+                }
+                img{width: 80%;       
+                }                    
+            }
+            &:hover{
+                .hover-galeria{
+                transform:scale(1)
+                }
+            }
+        }  
+    }
+}
+
+
+    
+
+
+
+
+
+

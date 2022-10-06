@@ -1,0 +1,29 @@
+ /*nuestros ervicios*/
+
+
+.nuestros-servicios{
+    padding-bottom: 30px;
+    .nuestros-servicios-cont{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        ;
+        .nuestros-servicios-ind{
+            width: 100%;
+            text-align: center;
+            padding: 8px;
+            img{
+                width: 100%;
+                height: 100%;
+                border-radius: 20px;
+            }
+            h3{
+                margin: 10px 0;
+            }
+            p{
+                font-weight: 300;
+                text-align: justify;
+            }
+        }
+    }
+}

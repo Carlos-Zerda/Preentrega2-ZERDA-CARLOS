@@ -1,0 +1,21 @@
+/*footer*/
+
+footer{background: $violeta;
+    padding: 30PX 0 15PX 0;
+    margin: auto;
+    overflow: hidden;
+    text-align: center;
+    .contenedor-footer{
+        display: flex;
+        width: 100%;
+        justify-content: space-evenly;
+        margin: auto;
+        padding-bottom: 50px;
+        border-bottom: 1px solid $blanco;
+        .content-foo{
+            img{width: 70px;
+            }
+        }
+    }
+}
+    
