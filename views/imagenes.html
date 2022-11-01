@@ -9,6 +9,7 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rajdhani&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <meta name="description" content="IntegraIntegre y optimice todos sus recursos logísticos. Te ayudamos a conectar necesidaes para que tu empresa no pierda oportunidades">
     <meta name="keywords" content="logistica, camion,camiones,gps,localización, seguimiento, geolocalización,conexión, recursos, transporte, transportes, carga, descarga, traslado, remisión, ">
     <link rel="stylesheet" href="../css/estilo.css">
@@ -17,12 +18,53 @@
 
 <body>
     <header>
-        <nav>
-            <a href="../index.html">Inicio</a>
-            <a href="./Contactenos.html">Contactenos</a>
-            <a href="./imagenes.html">Imagenes</a>
-            <a href="./centros_operacionales.html">Centros Operacionale</a>
-        </nav>
+        <nav class="navbar navbar-dark bg-dark fixed-top">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="../index.html">Pointrack</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Menu</h5>
+                  <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="../views/Contactenos.html">Contactenos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../views/centros_operacionales.html">Centros operacionales</a>
+                      </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="./views/imagenes.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Imagenes
+                      </a>
+                      <ul class="dropdown-menu dropdown-menu-dark">
+                        <li><a class="dropdown-item" href="./imagenes.html#img_1">Colaborativo</a></li>
+                        <li><a class="dropdown-item" href="./imagenes.html#control_de_carga">Control de carga</a></li>
+                        <li><a class="dropdown-item" href="./imagenes.html#carga_segura">Carga segura</a></li>
+                        <li><a class="dropdown-item" href="./imagenes.html#equipamiento_de_unidades">Equipamiento de unidades</a></li>
+                        <li>
+                        <li><a class="dropdown-item" href="./imagenes.html#tipo_de_unidades">Tipo de unidades</a></li>
+                        <li>  
+                          <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="./imagenes.html">Imagenes</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                  <form class="d-flex mt-3" role="search">
+                    <img src="../assets/img/png-clipart-mercedes-truck-run-quickly-truck__1___1_-removebg-preview.png" class="mx-auto d-block" alt="camion mercedes">
+                  </form>
+                </div>
+              </div>
+            </div>
+          </nav>
         <sectio class="textos-header" data-aos="fade-up"
         data-aos-duration="3000">
             <h1>OPTIMIZA TUS RECURSOS LOGISTICOS</h1>
@@ -33,39 +75,39 @@
     <main>
         <div class="header_grid">
             <div class="ej1" data-aos="fade-down">
-                <img src="../assets/img/ej1.jfif" alt="">
+                <img src="../assets/img/ej1.jfif" alt="personas colaborando">
             </div>
             <div class="ej2"data-aos="fade-right" >
-                <h3>Ejemplo 1</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut exercitationem ad iste optio consequuntur, veritatis pariatur molestiae. Omnis, saepe! Amet corporis deleniti rerum veniam, blanditiis quam vel repellendus voluptatem ratione?</p>
+                <h3 id="img_1">Colaborativo</h3>
+                <p>Ser colaborativos en los distintos procesos nos ayuda a incrementar las capacidades y reforzar el trabajo en equipo.</p>
             </div>
             <div class="ej3"data-aos="fade-up-right" >
-                <h3>Ejemplo 2</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut exercitationem ad iste optio consequuntur, veritatis pariatur molestiae. Omnis, saepe! Amet corporis deleniti rerum veniam, blanditiis quam vel repellendus voluptatem ratione?</p>
+                <h3 id="control_de_carga">Control de carga</h3>
+                <p>La calidad del control nos permite tener un resultado óptimo en el resultado final, reduciendo al mínimo diferencias en los stocks.</p>
             </div>
             <div class="ej4" data-aos="fade-down-right">
-                <img src="../assets/img/ej2.jfif" alt="">
+                <img src="../assets/img/ej2.jfif" alt="persona controlando">
             </div>
             <div class="ej5" data-aos="flip-left" >
                 <img src="../assets/img/ej3.jfif" alt="">
             </div>
             <div class="ej6" data-aos="flip-up">
-                <h3>Ejemplo 3</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut exercitationem ad iste optio consequuntur, veritatis pariatur molestiae. Omnis, saepe! Amet corporis deleniti rerum veniam, blanditiis quam vel repellendus voluptatem ratione?</p>
+                <h3 id="carga_segura">Carga segura</h3>
+                <p>La carga correctamente estibada y paletizada, permite un viaje de traslado sin problemas ni pérdidas para los clientes.</p>
             </div>
             <div class="ej7" data-aos="flip-down">
-                <h3>Ejemplo 4</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut exercitationem ad iste optio consequuntur, veritatis pariatur molestiae. Omnis, saepe! Amet corporis deleniti rerum veniam, blanditiis quam vel repellendus voluptatem ratione?</p>
+                <h3 id="equipamiento_de_unidades">Equipamiento de unidades</h3>
+                <p>Unidades bien equipadas asegura una integración dinámica en las dársenas de carga de los distintos centros de distribución.</p>
             </div>
             <div class="ej8" data-aos="fade-down">
-                <img src="../assets/img/ej4.jfif" alt="">
+                <img src="../assets/img/ej4.jfif" alt="camiones en darsena de carga">
             </div>
             <div class="ej9" data-aos="fade-right">
-                <img src="../assets/img/ej5.jfif" alt="">
+                <img src="../assets/img/ej5.jfif" alt="cargando camion">
             </div>
             <div class="ej10" data-aos="fade-up-right">
-                <h3>Ejemplo 5</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut exercitationem ad iste optio consequuntur, veritatis pariatur molestiae. Omnis, saepe! Amet corporis deleniti rerum veniam, blanditiis quam vel repellendus voluptatem ratione?</p>
+                <h3 id="tipo_de_unidades">Tipos de unidades</h3>
+                <p>La diversidad de los transportes implica una solución  rápida para cargas especiales o de distintas temperaturas.</p>
             </div>
         </div>
         <div class="video">
@@ -99,6 +141,8 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
-      </script>     
+      </script> 
+      <!-- JavaScript Bundle with Popper -->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>  
 </body>
 </html>

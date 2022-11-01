@@ -4,12 +4,12 @@
 .nuestros-servicios{
     padding-bottom: 30px;
     .nuestros-servicios-cont{
-        display: flex;
+        display:flex;
         justify-content: space-between;
-        align-items: center;
+        align-items:flex-start;
         ;
         .nuestros-servicios-ind{
-            width: 100%;
+            width: 40%;
             text-align: center;
             padding: 8px;
             img{
@@ -21,8 +21,9 @@
                 margin: 10px 0;
             }
             p{
-                font-weight: 300;
-                text-align: justify;
+                font-weight: 700;
+                text-align:center;
+                font-size: large;
             }
         }
     }
